@@ -58,7 +58,6 @@ public class NPCMove : MonoBehaviour
         } while (dest == prevDest);
 
         prevDest = dest;
-        Debug.Log(prevDest);
         return destinations[prevDest];
     }
 
@@ -75,19 +74,19 @@ public class NPCMove : MonoBehaviour
         GetComponent<NavMeshAgent>().SetDestination(patrolDestination.position);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (!collision.collider.CompareTag("PatrolDest") || isOnBreak)
+        if (!other.CompareTag("PatrolDest") || isOnBreak)
         {
             return;
         }
-        Debug.Log("yay");
         patrolCounter++;
         if (patrolCounter == 2)
         {
             patrolCounter = 0;
             GetComponent<Animator>().SetBool("Walk", false);
             isOnBreak = true;
+            GetComponent<NavMeshAgent>().SetDestination(transform.position);
             Invoke("Patrol", idleTime);
         }
         else
