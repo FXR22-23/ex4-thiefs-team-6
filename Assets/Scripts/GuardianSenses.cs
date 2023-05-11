@@ -2,16 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GuardianSight : MonoBehaviour
+public class GuardianSenses : MonoBehaviour
 {
     public GameObject player;
     private float viewingFieldDistance = 7;
     private float viewingFieldAngle = 30;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float hearingThreshold = 7;
 
     // Update is called once per frame
     void Update()
@@ -19,6 +15,11 @@ public class GuardianSight : MonoBehaviour
         if (IsInSight())
         {
             Debug.Log("Gotcha!");
+        }
+
+        if (IsInSight())
+        {
+            Debug.Log("Heard You!");
         }
     }
 
@@ -46,5 +47,12 @@ public class GuardianSight : MonoBehaviour
         }
 
         return false;
+    }
+
+    bool IsHeard()
+    {
+        // distance
+        float hearingDistance = Vector3.Distance(transform.position, player.transform.position);
+        return (hearingDistance < hearingThreshold);
     }
 }
