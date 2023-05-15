@@ -5,12 +5,15 @@ using Unity.VisualScripting;
 using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using Random = System.Random;
 
 public class NPCMove : MonoBehaviour
 {
+    [SerializeField] private Transform player;
+
     public Transform[] destinations;
-    private float speed = 0.003f;
+    private float catchDistance = 5f;
     private float rotationSpeed = 0.03f;
     private bool isOnBreak = false;
     Random rng = new Random(0);
@@ -26,27 +29,23 @@ public class NPCMove : MonoBehaviour
         Patrol();
     }
 
-    void Chase()
+    public void Chase()
     {
-        // Vector3 realGoal = new Vector3(goal.position.x, 
-        //     transform.position.y, goal.position.z);
-        // Vector3 direction = realGoal - transform.position;
-        //
-        // transform.rotation = Quaternion.Slerp(transform.rotation, 
-        //     Quaternion.LookRotation(direction), rotationSpeed);
-        //
-        // if (direction.magnitude >= distance)
-        // {
-        //     GetComponent<NavMeshAgent>().SetDestination(goal.position);
-        // }
-        // else // caught the player
-        // {
-        //     GetComponent<Animator>().SetBool("Is Walking", false);
-        //     GetComponent<Animator>().SetBool("Is Running", false);
-        //     isChaser = false;
-        //     canBeCaught = false;
-        //     Invoke("CanBeCaught", 3);
-        // }
+        Vector3 realGoal = new Vector3(player.position.x, 
+            transform.position.y, player.position.z);
+        Vector3 direction = realGoal - transform.position;
+        
+        transform.rotation = Quaternion.Slerp(transform.rotation, 
+            Quaternion.LookRotation(direction), rotationSpeed);
+        
+        if (direction.magnitude >= catchDistance)
+        {
+            GetComponent<NavMeshAgent>().SetDestination(player.position);
+        }
+        else // caught the player
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 
     Transform getNextDest()
@@ -99,6 +98,5 @@ public class NPCMove : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("Is Running", true);
         GetComponent<Animator>().SetBool("Is Walking", false);
-        speed = 0.006f;
     }
 }
