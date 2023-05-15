@@ -6,8 +6,8 @@ public class GuardianSenses : MonoBehaviour
 {
     public GameObject player;
     private float viewingFieldDistance = 7;
-    private float viewingFieldAngle = 30;
-    private float hearingThreshold = 7;
+    private float viewingFieldAngle = 45;
+    private float hearingThreshold = 3;
 
     // Update is called once per frame
     void Update()
@@ -17,7 +17,7 @@ public class GuardianSenses : MonoBehaviour
             Debug.Log("Gotcha!");
         }
 
-        if (IsInSight())
+        if (IsHeard())
         {
             Debug.Log("Heard You!");
         }
@@ -35,13 +35,14 @@ public class GuardianSenses : MonoBehaviour
         Vector3 distanceVector = player.transform.position - transform.position;
         distanceVector.y = 0;
         float angle = Vector3.Angle(transform.forward, distanceVector);
-        if (angle > viewingFieldAngle / 2)
+        if (angle > viewingFieldAngle)
         {
             return false;
         }
         // obsticles
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, distanceVector.normalized, out hit, distance))
+        Vector3 rayOrigin = transform.position + new Vector3(0, 1, 0);
+        if (Physics.Raycast(rayOrigin, distanceVector, out hit, distance))
         {
             return hit.collider.gameObject == player;
         }
