@@ -24,13 +24,13 @@ public class NPCMove : MonoBehaviour
 
     private void Start()
     {
-        // Invoke("StartChasing", 2);
         GetComponent<Animator>().SetBool("Walk", true);
         Patrol();
     }
 
     public void Chase()
     {
+        GetComponent<Animator>().SetBool("Run", true);
         Vector3 realGoal = new Vector3(player.position.x, 
             transform.position.y, player.position.z);
         Vector3 direction = realGoal - transform.position;
@@ -92,11 +92,5 @@ public class NPCMove : MonoBehaviour
         {
             Patrol();
         }
-    }
-
-    void StartRunning()
-    {
-        GetComponent<Animator>().SetBool("Is Running", true);
-        GetComponent<Animator>().SetBool("Is Walking", false);
     }
 }
