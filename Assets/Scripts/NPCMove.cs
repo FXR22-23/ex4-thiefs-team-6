@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using Random = System.Random;
 
 public class NPCMove : MonoBehaviour
@@ -43,7 +44,7 @@ public class NPCMove : MonoBehaviour
         }
         else // caught the player
         {
-            GetComponent<Animator>().SetBool("Walk", false);
+            SceneManager.LoadScene(2);
         }
     }
 
