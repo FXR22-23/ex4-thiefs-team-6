@@ -43,11 +43,7 @@ public class NPCMove : MonoBehaviour
         }
         else // caught the player
         {
-            GetComponent<Animator>().SetBool("Is Walking", false);
-            GetComponent<Animator>().SetBool("Is Running", false);
-            isChaser = false;
-            canBeCaught = false;
-            Invoke("CanBeCaught", 3);
+            GetComponent<Animator>().SetBool("Walk", false);
         }
     }
 
