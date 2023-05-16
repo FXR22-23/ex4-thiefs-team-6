@@ -13,7 +13,7 @@ public class NPCMove : MonoBehaviour
     [SerializeField] private Transform player;
 
     public Transform[] destinations;
-    private float catchDistance = 5f;
+    private float catchDistance = 1f;
     private float rotationSpeed = 0.03f;
     private bool isOnBreak = false;
     Random rng = new Random(0);

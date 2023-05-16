@@ -12,14 +12,10 @@ public class GuardianSenses : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsInSight())
+        if (IsInSight() || IsHeard())
         {
-            Debug.Log("Gotcha!");
-        }
-
-        if (IsHeard())
-        {
-            Debug.Log("Heard You!");
+            
+            GetComponent<NPCMove>().Chase();
         }
     }
 
