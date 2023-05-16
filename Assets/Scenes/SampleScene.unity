@@ -199,6 +199,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: interior the spaceship (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
 --- !u!4 &32799754 stripped
@@ -927,6 +935,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
       propertyPath: m_Name
       value: interior the spaceship (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
@@ -1816,6 +1832,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Room 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
 --- !u!4 &526317671 stripped
@@ -2065,6 +2089,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: main room
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7bd078801bec30f43849084a9a39f420, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7bd078801bec30f43849084a9a39f420, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bd078801bec30f43849084a9a39f420, type: 3}
 --- !u!4 &631579729 stripped
@@ -2225,6 +2257,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5c265566603e73649981458bd7b47351, type: 3}
       propertyPath: m_Name
       value: Moving Room 3 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5c265566603e73649981458bd7b47351, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5c265566603e73649981458bd7b47351, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c265566603e73649981458bd7b47351, type: 3}
@@ -3343,6 +3383,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: interior the spaceship (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
 --- !u!4 &1252266343 stripped
@@ -3420,6 +3468,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
       propertyPath: m_Name
       value: interior the spaceship (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
@@ -4575,6 +4631,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Room 2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
 --- !u!4 &1661621649 stripped
@@ -4672,6 +4736,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
       propertyPath: m_Name
       value: interior the spaceship (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
