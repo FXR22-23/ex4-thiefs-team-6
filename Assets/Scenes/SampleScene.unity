@@ -199,6 +199,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: interior the spaceship (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
 --- !u!4 &32799754 stripped
@@ -263,13 +271,13 @@ GameObject:
   - component: {fileID: 56465156}
   - component: {fileID: 56465155}
   - component: {fileID: 56465160}
-  - component: {fileID: 56465159}
   - component: {fileID: 56465158}
   - component: {fileID: 56465157}
   - component: {fileID: 56465161}
   - component: {fileID: 56465163}
   - component: {fileID: 56465162}
-  m_Layer: 0
+  - component: {fileID: 56465164}
+  m_Layer: 8
   m_Name: XR Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,47 +373,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &56465159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56465154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2213c36610e3b1c4bbf886810ed9db12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 0}
-  m_TurnAmount: 45
-  m_DebounceTime: 0.5
-  m_EnableTurnLeftRight: 1
-  m_EnableTurnAround: 1
-  m_LeftHandSnapTurnAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Left Hand Snap Turn
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: a1d07c24-ca50-422a-a23f-685d9fabf63b
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -7374733323251553461, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_RightHandSnapTurnAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Hand Snap Turn
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: a7b54797-6974-4f75-81d0-42b9c15ef1e0
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &56465160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,6 +434,44 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &56465164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56465154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 0}
+  m_TurnSpeed: 60
+  m_LeftHandTurnAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Left Hand Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b9ac2485-f305-451c-9106-d1d25cc235dc
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 1010738217276881514, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_RightHandTurnAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Hand Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 93119ec4-ae3b-41c0-8fb4-7ff4c5e6f732
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!4 &63851534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8366634978479202840, guid: 42398a5431672bd43b18fcd2ff95554c, type: 3}
@@ -524,7 +529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140352223}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.02, y: -1.66, z: 2.26}
+  m_LocalPosition: {x: -4.81, y: -1.65, z: 2.26}
   m_LocalScale: {x: 1, y: 4.23, z: 23.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -551,7 +556,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140352223}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -669,6 +674,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 07bc416c56fb7964295e1da0ccdbb259, type: 3}
       propertyPath: m_Name
       value: capsule
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07bc416c56fb7964295e1da0ccdbb259, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07bc416c56fb7964295e1da0ccdbb259, type: 3}
@@ -927,6 +936,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
       propertyPath: m_Name
       value: interior the spaceship (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
@@ -1312,7 +1329,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410462599}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1503,7 +1520,7 @@ GameObject:
   - component: {fileID: 485426251}
   - component: {fileID: 485426250}
   - component: {fileID: 485426249}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1816,6 +1833,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Room 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
 --- !u!4 &526317671 stripped
@@ -2065,6 +2090,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: main room
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7bd078801bec30f43849084a9a39f420, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7bd078801bec30f43849084a9a39f420, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bd078801bec30f43849084a9a39f420, type: 3}
 --- !u!4 &631579729 stripped
@@ -2226,6 +2259,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Room 3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5c265566603e73649981458bd7b47351, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5c265566603e73649981458bd7b47351, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c265566603e73649981458bd7b47351, type: 3}
 --- !u!4 &701051990 stripped
@@ -2384,7 +2425,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732555693}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2815,7 +2856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 913474939}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3343,6 +3384,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: interior the spaceship (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
 --- !u!4 &1252266343 stripped
@@ -3420,6 +3469,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
       propertyPath: m_Name
       value: interior the spaceship (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
@@ -3616,7 +3673,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371589348}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3824,7 +3881,7 @@ GameObject:
   - component: {fileID: 1514840079}
   - component: {fileID: 1514840078}
   - component: {fileID: 1514840077}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4374,7 +4431,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517319837}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4575,6 +4632,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Room 2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e1c0584254b2484595568e3655267cf, type: 3}
 --- !u!4 &1661621649 stripped
@@ -4672,6 +4737,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
       propertyPath: m_Name
       value: interior the spaceship (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dbe53d13ccee5a418dd3f91cbc97f4e, type: 3}
@@ -5049,8 +5122,8 @@ GameObject:
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1903409465
 BoxCollider:
@@ -5148,7 +5221,7 @@ GameObject:
   - component: {fileID: 1936029874}
   - component: {fileID: 1936029873}
   - component: {fileID: 1936029872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
