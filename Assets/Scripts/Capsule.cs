@@ -1,7 +1,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Capsule : MonoBehaviour
 {
     [SerializeField] private GameObject winningPlatform;
     // Start is called before the first frame update
