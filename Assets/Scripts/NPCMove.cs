@@ -39,7 +39,7 @@ public class NPCMove : MonoBehaviour
         }
         else // caught the player
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 

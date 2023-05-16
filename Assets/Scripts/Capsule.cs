@@ -9,7 +9,7 @@ public class Capsule : MonoBehaviour
     {
         if (collision.collider.gameObject == winningPlatform)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }
