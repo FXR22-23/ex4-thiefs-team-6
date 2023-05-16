@@ -267,6 +267,8 @@ GameObject:
   - component: {fileID: 56465158}
   - component: {fileID: 56465157}
   - component: {fileID: 56465161}
+  - component: {fileID: 56465163}
+  - component: {fileID: 56465162}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -463,7 +465,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!4 &63851534 stripped
 Transform:
