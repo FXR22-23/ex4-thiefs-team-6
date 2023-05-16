@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 56465159}
   - component: {fileID: 56465158}
   - component: {fileID: 56465157}
+  - component: {fileID: 56465161}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -417,6 +418,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XROrigin: {fileID: 0}
+--- !u!143 &56465161
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56465154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!4 &63851534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8366634978479202840, guid: 42398a5431672bd43b18fcd2ff95554c, type: 3}
@@ -481,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 07bc416c56fb7964295e1da0ccdbb259, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.04
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 07bc416c56fb7964295e1da0ccdbb259, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1288,12 +1307,12 @@ MonoBehaviour:
       m_Name: Position
       m_Type: 0
       m_ExpectedControlType: Vector3
-      m_Id: 
+      m_Id: d7cdddb4-925f-4819-b77f-1b290e77a872
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 
+        m_Id: 6ee4d200-40e6-4e92-b8c9-329cc6544137
         m_Path: <XRHMD>/centerEyePosition
         m_Interactions: 
         m_Processors: 
@@ -1308,12 +1327,12 @@ MonoBehaviour:
       m_Name: Rotation
       m_Type: 0
       m_ExpectedControlType: Quaternion
-      m_Id: 
+      m_Id: b2819259-4884-4cd9-9654-3d0ac9f4883a
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 
+        m_Id: 661e30f2-9fac-4045-8e40-113f8405b3ad
         m_Path: <XRHMD>/centerEyeRotation
         m_Interactions: 
         m_Processors: 
@@ -1380,7 +1399,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5487,11 +5506,11 @@ PrefabInstance:
     - target: {fileID: 4438916665726802192, guid: 42398a5431672bd43b18fcd2ff95554c, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 259864f0a2f662b42babdf3d71c3167d, type: 3}
     - target: {fileID: 4438916665726802192, guid: 42398a5431672bd43b18fcd2ff95554c, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 0b87dcd1b37b1894ea2be60775cb50f4, type: 2}
     - target: {fileID: 4492551491567826039, guid: 42398a5431672bd43b18fcd2ff95554c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5502,7 +5521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4492551491567826039, guid: 42398a5431672bd43b18fcd2ff95554c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2076
       objectReference: {fileID: 0}
     - target: {fileID: 4492551491567826039, guid: 42398a5431672bd43b18fcd2ff95554c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5629,73 +5648,6 @@ MonoBehaviour:
   tripodSize: 1
   boneColor: {r: 0, g: 0, b: 1, a: 0.5}
   m_Transforms:
-  - {fileID: 1926986425}
-  - {fileID: 781840472}
-  - {fileID: 516561948}
-  - {fileID: 1425298364}
-  - {fileID: 1733785902}
-  - {fileID: 172446858}
-  - {fileID: 213436816}
-  - {fileID: 78046923}
-  - {fileID: 1219799342}
-  - {fileID: 340936053}
-  - {fileID: 1138325993}
-  - {fileID: 114905322}
-  - {fileID: 803105928}
-  - {fileID: 324567200}
-  - {fileID: 1193299111}
-  - {fileID: 1033017235}
-  - {fileID: 1130359976}
-  - {fileID: 1043152950}
-  - {fileID: 1055429635}
-  - {fileID: 1672720415}
-  - {fileID: 1021852916}
-  - {fileID: 930539117}
-  - {fileID: 1508937413}
-  - {fileID: 79394816}
-  - {fileID: 1876724025}
-  - {fileID: 1844470558}
-  - {fileID: 447277012}
-  - {fileID: 2036600427}
-  - {fileID: 610584899}
-  - {fileID: 36610084}
-  - {fileID: 1569193954}
-  - {fileID: 584046766}
-  - {fileID: 235212066}
-  - {fileID: 1591747281}
-  - {fileID: 1741884562}
-  - {fileID: 644956927}
-  - {fileID: 322466237}
-  - {fileID: 1284419732}
-  - {fileID: 514582793}
-  - {fileID: 756227577}
-  - {fileID: 1436637472}
-  - {fileID: 870069604}
-  - {fileID: 1650080297}
-  - {fileID: 958934088}
-  - {fileID: 1687179623}
-  - {fileID: 1592911045}
-  - {fileID: 183122019}
-  - {fileID: 2080652344}
-  - {fileID: 129482122}
-  - {fileID: 370694890}
-  - {fileID: 1669505863}
-  - {fileID: 1506038162}
-  - {fileID: 971316089}
-  - {fileID: 1014575814}
-  - {fileID: 617858555}
-  - {fileID: 1525109962}
-  - {fileID: 769986454}
-  - {fileID: 1463411045}
-  - {fileID: 118433984}
-  - {fileID: 753628108}
-  - {fileID: 1572135509}
-  - {fileID: 5900182}
-  - {fileID: 155472249}
-  - {fileID: 63851534}
-  - {fileID: 1686578829}
-  - {fileID: 920119302}
-  - {fileID: 7348986213286864805}
   - {fileID: 1926986425}
   - {fileID: 781840472}
   - {fileID: 516561948}
