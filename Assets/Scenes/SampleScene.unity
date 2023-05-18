@@ -138,6 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 32253172}
   - component: {fileID: 32253173}
+  - component: {fileID: 32253174}
   m_Layer: 8
   m_Name: ChaseMusic
   m_TagString: Untagged
@@ -191,6 +192,38 @@ MonoBehaviour:
     Value: 1
   - Name: escaped
     Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &32253174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32253171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -983505770
+      Data2: 1208190238
+      Data3: 476760192
+      Data4: 372116916
+    Path: event:/SFXs/SFX.Heartbeat
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: Intensity
+    Value: 100
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -5056,6 +5089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814315620}
   - component: {fileID: 1814315621}
+  - component: {fileID: 1814315622}
   m_Layer: 8
   m_Name: GameplayMusic
   m_TagString: Untagged
@@ -5107,6 +5141,38 @@ MonoBehaviour:
   Params:
   - Name: Game
     Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1814315622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814315619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -983505770
+      Data2: 1208190238
+      Data3: 476760192
+      Data4: 372116916
+    Path: event:/SFXs/SFX.Heartbeat
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: Intensity
+    Value: 50
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
