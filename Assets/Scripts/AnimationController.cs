@@ -6,6 +6,7 @@ public class AnimationController : MonoBehaviour
 {
     [SerializeField] private InputActionReference move;
     [SerializeField] private Animator animator;
+    [SerializeField] private GameObject footsteps;
 
     private void OnEnable()
     {
@@ -27,11 +28,13 @@ public class AnimationController : MonoBehaviour
         {
             animator.SetBool("IsWalking", true);
             animator.SetFloat("AnimSpeed", 1);
+            footsteps.SetActive(true);
         }
         else
         {
             animator.SetBool("IsWalking", true);
             animator.SetFloat("AnimSpeed", -1);
+            footsteps.SetActive(true);
         }
     }
 
@@ -39,5 +42,6 @@ public class AnimationController : MonoBehaviour
     {
         animator.SetBool("IsWalking", false);
         animator.SetFloat("AnimSpeed", 0);
+        footsteps.SetActive(false);
     }
 }
