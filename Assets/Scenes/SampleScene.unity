@@ -5983,6 +5983,68 @@ MonoBehaviour:
       z: 1
     m_MaintainPositionOffset: 0
     m_MaintainRotationOffset: 0
+--- !u!1 &1979548882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979548883}
+  - component: {fileID: 1979548884}
+  m_Layer: 8
+  m_Name: Footsteps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1979548883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979548882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2001183933}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1979548884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979548882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1258900518
+      Data2: 1110614489
+      Data3: 1721591951
+      Data4: -964998418
+    Path: event:/SFXs/SFX.StepsGuard
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2001183920 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2525288283166211671, guid: b557ec90b8aa5c647b88e565d239aac0, type: 3}
@@ -6039,6 +6101,7 @@ MonoBehaviour:
   player: {fileID: 56465154}
   avatar: {fileID: 7348986213286864802}
   gameManager: {fileID: 586182916}
+  footsteps: {fileID: 1979548882}
   destinations:
   - {fileID: 1807753603}
   - {fileID: 870263049}
@@ -6073,6 +6136,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 56465154}
+--- !u!4 &2001183933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8852159209662015538, guid: b557ec90b8aa5c647b88e565d239aac0, type: 3}
+  m_PrefabInstance: {fileID: 2649749276417531923}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2036600427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5566189236487706966, guid: 42398a5431672bd43b18fcd2ff95554c, type: 3}

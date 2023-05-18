@@ -10,6 +10,7 @@ public class NPCMove : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject avatar;
     [SerializeField] private GameObject gameManager;
+    [SerializeField] private GameObject footsteps;
 
     public Transform[] destinations;
     private float catchDistance = 1f;
@@ -26,6 +27,7 @@ public class NPCMove : MonoBehaviour
     private void Start()
     {
         GetComponent<Animator>().SetBool("Walk", true);
+        footsteps.SetActive(true);
         Patrol();
     }
 
@@ -46,6 +48,7 @@ public class NPCMove : MonoBehaviour
             startedChaseMusic = true;
         }
         GetComponent<Animator>().SetBool("Run", true);
+        footsteps.SetActive(true);
         Vector3 realGoal = new Vector3(player.transform.position.x, 
             transform.position.y, player.transform.position.z);
         Vector3 direction = realGoal - transform.position;
@@ -79,6 +82,7 @@ public class NPCMove : MonoBehaviour
     void Patrol()
     {
         GetComponent<Animator>().SetBool("Walk", true);
+        footsteps.SetActive(true);
         isOnBreak = false;
         Transform patrolDestination = getNextDest();
         Vector3 realGoal =
@@ -100,6 +104,7 @@ public class NPCMove : MonoBehaviour
         {
             patrolCounter = 0;
             GetComponent<Animator>().SetBool("Walk", false);
+            footsteps.SetActive(false);
             isOnBreak = true;
             GetComponent<NavMeshAgent>().SetDestination(transform.position);
             Invoke("Patrol", idleTime);
