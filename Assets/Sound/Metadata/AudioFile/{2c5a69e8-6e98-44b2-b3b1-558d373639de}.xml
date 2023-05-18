@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2c5a69e8-6e98-44b2-b3b1-558d373639de}">
+		<property name="assetPath">
+			<value>SFX.Roomtone1.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>124.89142857142858</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c91475e7-b1b8-4081-be0f-52cb60d07285}</destination>
+		</relationship>
+	</object>
+</objects>

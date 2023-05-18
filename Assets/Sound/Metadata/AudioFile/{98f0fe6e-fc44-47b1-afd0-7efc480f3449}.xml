@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{98f0fe6e-fc44-47b1-afd0-7efc480f3449}">
+		<property name="assetPath">
+			<value>BGM.losing.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>47.542857142857144</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c91475e7-b1b8-4081-be0f-52cb60d07285}</destination>
+		</relationship>
+	</object>
+</objects>

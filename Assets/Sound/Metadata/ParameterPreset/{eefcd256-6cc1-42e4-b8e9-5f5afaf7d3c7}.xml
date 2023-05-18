@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{eefcd256-6cc1-42e4-b8e9-5f5afaf7d3c7}">
+		<property name="name">
+			<value>escaped</value>
+		</property>
+		<relationship name="folder">
+			<destination>{4e3e9da4-a92b-4d12-9f15-beccd87afb32}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cba44752-189f-4347-b310-62cde3e12489}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cba44752-189f-4347-b310-62cde3e12489}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>chase</value>
+			<value>win</value>
+			<value>lose</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
