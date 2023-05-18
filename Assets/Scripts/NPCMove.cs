@@ -60,9 +60,7 @@ public class NPCMove : MonoBehaviour
         else // caught the player
         {
             gameManager.GetComponent<GameManager>().TurnOnLoseMusic();
-            SceneManager.LoadScene(3);
-            player.transform.position = new Vector3(12.836f, 2.6766f, 37.968f);
-            avatar.transform.position = new Vector3(12.836f, 2.6766f, 37.968f);
+            Invoke("LoadLosingScene", 4);
         }
     }
 
@@ -110,5 +108,12 @@ public class NPCMove : MonoBehaviour
         {
             Patrol();
         }
+    }
+    
+    private void LoadLosingScene()
+    {
+        SceneManager.LoadScene(3);
+        player.transform.position = new Vector3(12.836f, 2.6766f, 37.968f);
+        avatar.transform.position = new Vector3(12.836f, 2.6766f, 37.968f);
     }
 }

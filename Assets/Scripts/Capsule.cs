@@ -13,9 +13,14 @@ public class Capsule : MonoBehaviour
         if (collision.collider.gameObject == winningPlatform)
         {
             gameManager.GetComponent<GameManager>().TurnOnWinMusic();
-            SceneManager.LoadScene(2);
-            player.transform.position = new Vector3(12.836f, 2.6766f, 37.968f);
-            avatar.transform.position = new Vector3(12.836f, 2.6766f, 37.968f);
+            Invoke("LoadWinningScene", 4);
         }
+    }
+
+    private void LoadWinningScene()
+    {
+        SceneManager.LoadScene(2);
+        player.transform.position = new Vector3(12.836f, 2.6766f, 37.968f);
+        avatar.transform.position = new Vector3(12.836f, 2.6766f, 37.968f);
     }
 }
