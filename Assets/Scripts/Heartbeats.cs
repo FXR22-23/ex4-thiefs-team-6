@@ -21,6 +21,7 @@ public class Heartbeats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        instance.setParameterByName("Intensity", intensity);
+        // instance.setVolume(intensity);
+        // instance.setParameterByName("intensity", intensity);
     }
 }
