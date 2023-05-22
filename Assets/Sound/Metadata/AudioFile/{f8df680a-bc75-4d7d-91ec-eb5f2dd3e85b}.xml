@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f8df680a-bc75-4d7d-91ec-eb5f2dd3e85b}">
+		<property name="assetPath">
+			<value>y2mate.com - Stop Right There Criminal Scum Sound Effect  SES.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.8285714285714285</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c91475e7-b1b8-4081-be0f-52cb60d07285}</destination>
+		</relationship>
+	</object>
+</objects>

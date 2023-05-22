@@ -13,7 +13,7 @@ public class Capsule : MonoBehaviour
         if (collision.collider.gameObject == winningPlatform)
         {
             gameManager.GetComponent<GameManager>().TurnOnWinMusic();
-            Invoke("LoadWinningScene", 4);
+            LoadWinningScene();
         }
     }
 

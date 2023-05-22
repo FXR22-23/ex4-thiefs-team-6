@@ -55,7 +55,7 @@ MonoBehaviour:
   - {fileID: -7044443347011798493}
   MinDistance: 1
   MaxDistance: 20
-  Length: 361477
+  Length: 383477
 --- !u!114 &-4251257864630723161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   Path: Assets/Sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638200225275356230
+  lastModified: 638203658404014476
   FileSizes:
   - Name: Desktop
     Value: 1308
@@ -161,7 +161,7 @@ MonoBehaviour:
   - {fileID: 5684970707553872754}
   StringsBanks:
   - {fileID: -3167182612483919139}
-  cacheTime: 638200225275356230
+  cacheTime: 638203658404014476
   cacheVersion: 131593
 --- !u!114 &832141549075939586
 MonoBehaviour:
@@ -212,7 +212,7 @@ MonoBehaviour:
   - {fileID: 5684970707553872754}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -244,7 +244,7 @@ MonoBehaviour:
   - {fileID: 5425484417305896409}
   MinDistance: 1
   MaxDistance: 20
-  Length: 5625
+  Length: 22672
 --- !u!114 &3634968461710036758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +267,7 @@ MonoBehaviour:
   - {fileID: 5684970707553872754}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -314,14 +314,15 @@ MonoBehaviour:
   Name: escaped
   StudioPath: 
   Min: 0
-  Max: 2
-  Default: 0
+  Max: 3
+  Default: 1
   ID:
     data1: 2577447649
     data2: 2949454722
   Type: 2
   IsGlobal: 0
   Labels:
+  - Gameplay
   - chase
   - win
   - lose
@@ -365,10 +366,10 @@ MonoBehaviour:
   Path: Assets/Sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638200225274495890
+  lastModified: 638203658403754575
   FileSizes:
   - Name: Desktop
-    Value: 8621984
+    Value: 8584192
   Exists: 1
 --- !u!114 &6218797476744786907
 MonoBehaviour:
