@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8648772114938929943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM.VideoMusic
+  m_EditorClassIdentifier: 
+  Path: event:/BGM.VideoMusic
+  Guid:
+    Data1: 2013679866
+    Data2: 1340933990
+    Data3: -1837255003
+    Data4: 1192364056
+  Banks:
+  - {fileID: 5684970707553872754}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 81711
 --- !u!114 &-7044443347011798493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,7 +75,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 5684970707553872754}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: 4953379040208911632}
@@ -125,10 +152,10 @@ MonoBehaviour:
   Path: Assets/Sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638206097735571570
+  lastModified: 638206111925191250
   FileSizes:
   - Name: Desktop
-    Value: 1308
+    Value: 1360
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -156,12 +183,13 @@ MonoBehaviour:
   - {fileID: 3736642860072106698}
   - {fileID: 6218797476744786907}
   - {fileID: 1709227212079075074}
+  - {fileID: -8648772114938929943}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5684970707553872754}
   StringsBanks:
   - {fileID: -3167182612483919139}
-  cacheTime: 638206097735571570
+  cacheTime: 638206111925191250
   cacheVersion: 131593
 --- !u!114 &832141549075939586
 MonoBehaviour:
@@ -315,7 +343,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 3
-  Default: 1
+  Default: 0
   ID:
     data1: 2577447649
     data2: 2949454722
@@ -366,10 +394,10 @@ MonoBehaviour:
   Path: Assets/Sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638206097734471450
+  lastModified: 638206111923951190
   FileSizes:
   - Name: Desktop
-    Value: 8584192
+    Value: 9490944
   Exists: 1
 --- !u!114 &6218797476744786907
 MonoBehaviour:

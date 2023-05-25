@@ -5,7 +5,7 @@
 			<value>BGM.VideoMusic</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{e081f95c-a4fd-4cdb-91b7-5a698bf1c59f}</destination>
@@ -113,7 +113,6 @@
 	<object class="MixerBusEffectChain" id="{007aa9db-4581-4144-8183-8d637d790efb}">
 		<relationship name="effects">
 			<destination>{7e197e14-031f-4669-8fc5-3394c18e8312}</destination>
-			<destination>{b627cb15-4db6-4b65-8590-228a164b13fd}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f30a72aa-7faa-4de1-aedc-86063e4c4e35}" />
@@ -125,6 +124,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{4bf2a0ef-d88a-4528-8dcd-3a7bddde2fef}" />
 	<object class="MixerBusFader" id="{7e197e14-031f-4669-8fc5-3394c18e8312}" />
-	<object class="SpatialiserEffect" id="{b627cb15-4db6-4b65-8590-228a164b13fd}" />
 	<object class="MixerBusFader" id="{2170fc10-ce7a-49c6-8b69-889c7fa6b960}" />
 </objects>
